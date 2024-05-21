@@ -13,14 +13,33 @@
         <h1>ADMINISTRADOR CSV</h1>
         </header>
         <div id="aplication">
-            <h2>SELECCIONA EL ARCHIVO QUE QUIERES LEER</h2>
-            <input type="file.csv" id="archivo1"/>
             <h2>Contenido del Archivo</h2>
-            <pre id="contenido-del-archivo"></pre>
+
+            <h3>DescargarCSV</h3>       
+            <input type="file" id="csvFileInput">
+            <button id="downloadCSV">Descarga el nuevo CSV</button>
+            
+            <h3>Añadir Datos</h3>
+            <form id="addDataForm">
+                <input type="text" id="newRowData" placeholder="Separa los datos con comas">
+                <button type="submit">Añade Datos</button>
+            </form>
+            
+            <h3>Elimina Datos</h3>
+            <form id="deleteDataForm">
+                <input type="number" id="rowIndex" placeholder="selecciona lo que quieres borrar">
+                <button type="submit">Elimina datos</button>
+            </form>
+            
+            <table id="csvTable">
+                <tbody></tbody>
+            </table>
+        
 
 
 
         </div> 
+        <div class="clearfix"></div>
         <footer>
             Luis Arturo Cruz Valencia
         </footer>    
